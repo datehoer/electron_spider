@@ -12,6 +12,7 @@
     "@electron-forge/cli": "^6.0.1",
     "cheerio": "^1.0.0-rc.12",
     "electron": "^21.2.3",
+    "https-proxy-agent": "^5.0.1",
     "moment": "^2.29.4",
     "mysql2": "^2.3.3",
     "node-fetch": "^3.3.0"
