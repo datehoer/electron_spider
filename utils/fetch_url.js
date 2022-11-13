@@ -1,6 +1,12 @@
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const HttpsProxyAgent = require('https-proxy-agent');
-async function get_html(url, method='GET', type='html', headers, timeout=10, proxy='', body={}){
+async function get_html(url, method='GET',
+                        type='html',
+                        headers={'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'},
+                        timeout=10,
+                        proxy='',
+                        body={}
+    ){
     let header = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
         "Referer": url

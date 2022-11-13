@@ -1,11 +1,7 @@
-const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-const HttpsProxyAgent = require('https-proxy-agent');
+const {fetch_url} = require('./utils/fetch_url');
 
 async function main(){
-    let res = await fetch('http://www.baidu.com', {
-        method: 'get',
-        agent: new HttpsProxyAgent('http://127.0.0.1:7890'),
-    });
-    console.log(await res.text())
+    let res = await fetch_url('http://www.baidu.com');
+    console.log(res)
 }
 main()

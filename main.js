@@ -10,7 +10,7 @@ const createWindow = ()=>{
         }
     })
     ipcMain.handle('ping', ()=> 'pong')
-    win.loadFile('index.html')
+    win.loadFile(path.join(__dirname, '/static/template/index.html'))
 }
 app.whenReady().then(()=>{
     createWindow();

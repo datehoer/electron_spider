@@ -2,9 +2,10 @@
   "name": "claw_electron",
   "version": "1.0.0",
   "description": "a exe clawer",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "author": "DD",
   "license": "ISC",
