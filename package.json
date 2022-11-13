@@ -1,0 +1,19 @@
+{
+  "name": "claw_electron",
+  "version": "1.0.0",
+  "description": "a exe clawer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DD",
+  "license": "ISC",
+  "dependencies": {
+    "@electron-forge/cli": "^6.0.1",
+    "cheerio": "^1.0.0-rc.12",
+    "electron": "^21.2.3",
+    "moment": "^2.29.4",
+    "mysql2": "^2.3.3",
+    "node-fetch": "^3.3.0"
+  }
+}
